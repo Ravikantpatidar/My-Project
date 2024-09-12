@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Page</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Product section */
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-image {
+            flex: 1;
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .product-details {
+            flex: 1;
+            max-width: 45%;
+            padding: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-details .price {
+            font-size: 2rem;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .product-details p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .add-to-cart-btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #e5533d;
+        }
+
+        /* Reviews section */
+        .reviews {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reviews h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .review .reviewer-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review .rating {
+            color: #ff6347;
+        }
+
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+            }
+
+            .product-image, .product-details {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Product Title</h1>
+</header>
+
+<div class="container">
+    <div class="product-page">
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="Screenshot 2024-09-11 144600.png" alt="Product Image">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h2>Ultra watch </h2>
+            <p class="price">₹599</p>
+            <p> .Unlimited repairs for Drops, Spills, and Mechanical Breakdown
+                .Theft and Loss Coverage
+                .Same Day Replacement and Set Up
+                .Knox Guard security including remote lock and wipe.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product Reviews -->
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+
+        <div class="review">
+            <p class="reviewer-name">John Doe</p>
+            <p class="rating">★★★★★</p>
+            <p>This product is amazing! Highly recommend it.</p>
+        </div>
+
+        <div class="review">
+            <p class="reviewer-name">Jane Smith</p>
+            <p class="rating">★★★★☆</p>
+            <p>Good quality but the shipping was a bit slow.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
